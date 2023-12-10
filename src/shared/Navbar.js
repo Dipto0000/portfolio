@@ -22,7 +22,7 @@ const Navbar = () => {
     <div className="navbar bg-base-100 flex-wrap fixed z-10">
       <div className="navbar-start">
         <a href="/" className="btn btn-ghost normal-case text-xl">
-          MentCare
+          Sohan
         </a>
       </div>
       <div className="navbar-end">
