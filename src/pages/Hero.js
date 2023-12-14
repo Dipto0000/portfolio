@@ -17,7 +17,7 @@ import {
 
 const Hero = () => {
   return (
-    <div className="hero  description-center">
+    <div className="hero min-h-screen description-center">
       <div className="hero-content flex-col justify-between lg:flex-row">
         <img
           src={sohan}
