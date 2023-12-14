@@ -1,5 +1,6 @@
 import React from "react";
 import sohan from "../assets/images/sohanImage.png";
+import "../styles/description_center.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faEnvelope,
@@ -16,7 +17,7 @@ import {
 
 const Hero = () => {
   return (
-    <div className="hero min-h-screen p-20">
+    <div className="hero  description-center">
       <div className="hero-content flex-col justify-between lg:flex-row">
         <img
           src={sohan}
@@ -46,7 +47,6 @@ const Hero = () => {
               <FontAwesomeIcon icon={faLocationPin} /> DHAKA, BANGLADESH
             </small>
           </p>
-          <br />
           <br />
           <div>
             <a
