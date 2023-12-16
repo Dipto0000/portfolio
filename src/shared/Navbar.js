@@ -1,5 +1,6 @@
 import React from "react";
-import { NavLink } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
+// import PDF from "../assets/Shafikul_Islam_CV.pdf";
 
 const menuItems = (
   <>
@@ -10,7 +11,16 @@ const menuItems = (
       <NavLink to="/publications">Publications</NavLink>
     </li>
     <li>
-      <NavLink to="/resume">Resume</NavLink>
+      <NavLink to="/projects">Research Projects</NavLink>
+    </li>
+    <li>
+      <Link
+        to="/assets/cv/Shafikul_Islam_CV.pdf"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        Resume
+      </Link>
     </li>
     <li>
       <NavLink to="/blog">Blog</NavLink>
@@ -19,7 +29,7 @@ const menuItems = (
 );
 const Navbar = () => {
   return (
-    <div className="navbar bg-base-100 flex-wrap fixed z-10">
+    <div className="navbar bg-base-100 flex-wrap sticky z-10 top-0">
       <div className="navbar-start">
         <a href="/" className="btn btn-ghost normal-case text-xl">
           Shafikul Islam / শফিকুল ইসলাম
