@@ -4,22 +4,24 @@ import { NavLink, Link } from "react-router-dom";
 const menuItems = (
   <>
     <li>
-      <NavLink to="/academic">Academic</NavLink>
+      <NavLink to="academic">Academic</NavLink>
     </li>
     <li tabIndex={0}>
-      <NavLink to="/optimization">Optimization </NavLink>
+      <NavLink to="optimization">Optimization </NavLink>
     </li>
     <li>
-      <NavLink to="/supply-chain">Supply Chain Management </NavLink>
+      <NavLink to="supply-chain">Supply Chain Management </NavLink>
     </li>
     <li>
-      <NavLink to="/data-science">Data Science  </NavLink>
+      <NavLink to="data-science">Data Science </NavLink>
     </li>
     <li>
-      <NavLink to="/machine-learning">Machine Learning  </NavLink>
+      <NavLink to="machine-learning">Machine Learning </NavLink>
     </li>
     <li>
-      <NavLink to="/natural-language-processing">Natural Language processing  </NavLink>
+      <NavLink to="natural-language-processing">
+        Natural Language processing
+      </NavLink>
     </li>
   </>
 );
