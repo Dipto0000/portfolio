@@ -4,25 +4,22 @@ import { NavLink, Link } from "react-router-dom";
 const menuItems = (
   <>
     <li>
-      <NavLink to="/">Home</NavLink>
+      <NavLink to="/academic">Academic</NavLink>
     </li>
     <li tabIndex={0}>
-      <NavLink to="/publications">Publications</NavLink>
+      <NavLink to="/optimization">Optimization </NavLink>
     </li>
     <li>
-      <NavLink to="/projects">Research Projects</NavLink>
+      <NavLink to="/supply-chain">Supply Chain Management </NavLink>
     </li>
     <li>
-      <Link
-        to="/assets/cv/Shafikul_Islam_CV.pdf"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        Resume
-      </Link>
+      <NavLink to="/data-science">Data Science  </NavLink>
     </li>
     <li>
-      <NavLink to="/blog">Blog</NavLink>
+      <NavLink to="/machine-learning">Machine Learning  </NavLink>
+    </li>
+    <li>
+      <NavLink to="/natural-language-processing">Natural Language processing  </NavLink>
     </li>
   </>
 );
@@ -30,11 +27,6 @@ const menuItems = (
 const ProjectNestedNavbar = () => {
   return (
     <div className="navbar bg-base-100 flex-wrap sticky z-10 top-0">
-      <div className="navbar-start">
-        <a href="/" className="btn btn-ghost normal-case text-xl">
-          Shafikul Islam / শফিকুল ইসলাম
-        </a>
-      </div>
       <div className="navbar-end">
         <ul className="menu menu-horizontal px-1 hidden lg:flex space-x-3">
           {menuItems}
