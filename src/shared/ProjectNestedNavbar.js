@@ -1,5 +1,5 @@
 import React from "react";
-import { Link, NavLink } from "react-router-dom";
+import { NavLink, Link } from "react-router-dom";
 
 const menuItems = (
   <>
@@ -26,7 +26,8 @@ const menuItems = (
     </li>
   </>
 );
-const Navbar = () => {
+
+const ProjectNestedNavbar = () => {
   return (
     <div className="navbar bg-base-100 flex-wrap sticky z-10 top-0">
       <div className="navbar-start">
@@ -67,4 +68,4 @@ const Navbar = () => {
   );
 };
 
-export default Navbar;
+export default ProjectNestedNavbar;
