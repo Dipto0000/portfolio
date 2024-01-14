@@ -76,9 +76,7 @@ const HomeAdditionalInfo = () => {
           </div>
           <div>
             <li>
-              <span className="font-bold">November 3, 2023:</span> Preprint of
-              our paper "Optimizing Inventory Routing: A Decision-Focused
-              Learning Approach using Neural Networks" is available here:{" "}
+              <span className="font-bold">November 3, 2023:</span>{" "}
               <a
                 className="text-blue-500"
                 href="https://arxiv.org/abs/2311.00983"
