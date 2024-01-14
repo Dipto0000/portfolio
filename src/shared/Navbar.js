@@ -21,9 +21,6 @@ const menuItems = (
         Resume
       </Link>
     </li>
-    <li>
-      <NavLink to="/blog">Blog</NavLink>
-    </li>
   </>
 );
 const Navbar = () => {
