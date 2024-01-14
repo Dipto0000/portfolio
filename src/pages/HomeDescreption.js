@@ -3,7 +3,7 @@ import "../styles/description_center.css";
 
 const HomeDescreption = () => {
   return (
-    <div className="w-1/2 d-paragraph mb-5">
+    <div className="w-1/2 d-paragraph mb-10 ">
       <div className="mb-5">
         <p>
           Hello there! I am currently an undergraduate student pursuing a degree
@@ -72,6 +72,8 @@ const HomeDescreption = () => {
           optimization. We aim not only to learn ourselves but also to mentor
           and guide fellow students in this exciting field.
         </p>
+        <br />
+        <br />
       </div>
     </div>
   );
