@@ -72,6 +72,22 @@ const HomeAdditionalInfo = () => {
               <span className="font-bold">December 4, 2023:</span> Successfully
               completed the GUROBI Training: Optimization 201 for Data
               Scientists.
+              <p>
+                <span className="font-bold">Description of training</span> :
+                Opti201 is tailored for data scientists, machine learning
+                enthusiasts, analysts, academics and professionals seeking to
+                elevate their skills by learning to build more complex
+                mathematical optimization models and better understanding how
+                optimization integrates with machine learning <br />
+                <a
+                  href="/assets/cv/certificate.pdf"
+                  className="text-blue-500"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Certificate of Completion here.
+                </a>
+              </p>
             </li>
           </div>
           <div>

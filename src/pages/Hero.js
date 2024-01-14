@@ -50,7 +50,7 @@ const Hero = () => {
           <br />
           <div>
             <a
-              className="m-0"
+              className="m-3"
               href="https://www.linkedin.com/in/md-shafikul-islam-sohan/"
               target="_blank"
               rel="noopener noreferrer"
@@ -75,7 +75,7 @@ const Hero = () => {
             </a>
             <a
               className="m-3"
-              href="https://www.kaggle.com/mdshafikulislamsohan "
+              href="https://www.kaggle.com/mdshafikulislamsohan"
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -89,6 +89,49 @@ const Hero = () => {
             >
               <FontAwesomeIcon icon={faHackerrank} />
             </a>
+            {/* New Lines with Tiny Fonts for the Links without Icons */}
+            <span className="text-xs">
+              <a
+                className="m-3"
+                href="https://www.semanticscholar.org/author/MD-Shafikul-Islam/2244783507"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Semantic Scholar
+              </a>
+              <a
+                className="m-3"
+                href="https://leetcode.com/shafikul_islam-sohan/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                LeetCode
+              </a>
+              <a
+                className="m-3"
+                href="https://openreview.net/profile?id=~MD_Shafikul_Islam1"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Open Review
+              </a>
+              <a
+                className="m-3"
+                href="https://www.datacamp.com/portfolio/sohan11807044"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Data Camp
+              </a>
+              <a
+                className="m-3"
+                href="https://www.coursera.org/user/c39540d8b39a85c8e2a859d9cbb5d787"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Coursera
+              </a>
+            </span>
           </div>
         </div>
       </div>

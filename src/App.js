@@ -16,6 +16,7 @@ import SupplyChain from "./pages/Projects/SupplyChain";
 import DataScience from "./pages/Projects/DataScience";
 import ML from "./pages/Projects/ML";
 import NLP from "./pages/Projects/NLP";
+import Publications from "./pages/Publications";
 
 const router = createBrowserRouter(
   createRoutesFromElements(
@@ -38,6 +39,10 @@ const router = createBrowserRouter(
         <Route path="machine-learning" element={<ML></ML>}></Route>
         <Route path="natural-language-processing" element={<NLP></NLP>}></Route>
       </Route>
+      <Route
+        path="publications"
+        element={<Publications></Publications>}
+      ></Route>
       <Route path="*" element={<NotFound></NotFound>}></Route>
     </Route>
   )
