@@ -1,7 +1,7 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import { Link, NavLink } from "react-router-dom";
 
-const menuItems = (
+const MenuItems = () => (
   <>
     <li>
       <NavLink to="/">Home</NavLink>
@@ -23,7 +23,33 @@ const menuItems = (
     </li>
   </>
 );
+
 const Navbar = () => {
+  const [menuOpen, setMenuOpen] = useState(false);
+
+  const handleToggleMenu = () => {
+    setMenuOpen(!menuOpen);
+  };
+
+  const handleCloseMenu = () => {
+    setMenuOpen(false);
+  };
+
+  useEffect(() => {
+    const handleOutsideClick = (event) => {
+      if (!event.target.closest(".navbar-end")) {
+        // Clicked outside of the navbar, close the menu
+        handleCloseMenu();
+      }
+    };
+
+    document.addEventListener("click", handleOutsideClick);
+
+    return () => {
+      document.removeEventListener("click", handleOutsideClick);
+    };
+  }, []); // Empty dependency array means this effect runs once, like componentDidMount
+
   return (
     <div className="navbar bg-base-100 flex-wrap sticky z-10 top-0">
       <div className="navbar-start">
@@ -32,11 +58,8 @@ const Navbar = () => {
         </a>
       </div>
       <div className="navbar-end">
-        <ul className="menu menu-horizontal px-1 hidden lg:flex space-x-3">
-          {menuItems}
-        </ul>
-        <div className="dropdown">
-          <label tabIndex={0} className="btn btn-ghost lg:hidden">
+        <div className="lg:hidden" onClick={handleToggleMenu}>
+          <label tabIndex={0} className="btn btn-ghost">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               className="h-5 w-5"
@@ -52,13 +75,17 @@ const Navbar = () => {
               />
             </svg>
           </label>
-          <ul
-            tabIndex={0}
-            className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52"
-          >
-            {menuItems}
-          </ul>
         </div>
+        {menuOpen && (
+          <div className="lg:hidden">
+            <ul className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52 left-0">
+              <MenuItems />
+            </ul>
+          </div>
+        )}
+        <ul className="menu menu-horizontal px-1 hidden lg:flex space-x-3">
+          <MenuItems />
+        </ul>
       </div>
     </div>
   );
