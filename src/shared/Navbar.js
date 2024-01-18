@@ -38,7 +38,6 @@ const Navbar = () => {
   useEffect(() => {
     const handleOutsideClick = (event) => {
       if (!event.target.closest(".navbar-end")) {
-        // Clicked outside of the navbar, close the menu
         handleCloseMenu();
       }
     };
@@ -48,7 +47,7 @@ const Navbar = () => {
     return () => {
       document.removeEventListener("click", handleOutsideClick);
     };
-  }, []); // Empty dependency array means this effect runs once, like componentDidMount
+  }, []);
 
   return (
     <div className="navbar bg-base-100 flex-wrap sticky z-10 top-0">
